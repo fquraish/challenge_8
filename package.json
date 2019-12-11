@@ -1,0 +1,26 @@
+{
+  "name": "challenge_8",
+  "version": "1.0.0",
+  "description": "## Challenge 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codincamp/challenge_8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codincamp/challenge_8/issues"
+  },
+  "homepage": "https://github.com/codincamp/challenge_8#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0"
+  }
+}
