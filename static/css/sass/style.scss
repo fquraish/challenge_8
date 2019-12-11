@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'header';
+
+
+
+html{
+    overflow-x: hidden;
+    font-size: 1em;
+}
+body{
+    background: $color-white;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: $font-primary;
+    line-height: 1.8;
+    color: $color-body-text;
+}
+// Typography
+h1,h2,h3,h4{
+    color: $color-heading-text;
+    font-family: $font-primary;
+    margin: 1.4em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+h1{
+    margin-top: 0;
+    font-size: 1.6em;
+}
+h2{font-size: 1.42em;}
+h3{font-size: 1.26em;}
+h4{font-size: 1.12em;}
+small, .font_small{font-size: 0.9em;}
+
+p, ul, ol {
+    margin-bottom: 1.3em;
+}
+a{
+    transition: .3s all;
+    color: $color-primary;
+    &:hover, &:focus, &:active {
+        color: darken($color-black, 5%);
+        text-decoration: none;
+    }
+}

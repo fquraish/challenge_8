@@ -1,0 +1,132 @@
+@import 'variables';
+
+.pink-header{
+    padding-top: 30px;
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+}
+.logo{
+    float: left;
+    color: $color-white;
+    padding-left: 60px;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover, &:focus, &:active {
+        color: $color-white;
+    }
+}
+.nav{
+    padding-right: 60px;
+    float: right;
+}
+// main nav
+.main-nav{
+    float: right;
+    margin: 0;
+    padding: 0;
+    li{
+        margin: 0;
+        padding: 0 10px;
+        list-style: none;
+        display: inline;
+        font-size: 18px;
+        a{
+            padding: 10px 0;
+            color: $color-white;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                border-bottom: 2px solid $color-white;
+            }
+        }
+        &.active{
+            a{
+                border-bottom: 2px solid $color-white;
+                &:hover{
+                    border-bottom: 2px solid $color-white;
+                }
+            }
+        }
+    }
+}
+// intro
+.intro{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    height: 800px;
+    overflow: hidden;
+    .scroll-down{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+        transition: .9s all ease-out;
+        bottom: 20px;
+        color: $color-white;
+        opacity: 1;
+        visibility: visible;
+    }
+    .intro-text{
+        margin-top: 200px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    &:before{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background: linear-gradient(to right,$color-secondary,$color-primary);
+        opacity: .8;
+    }
+    .container-fluid, > .container{
+        position: relative;
+        z-index: 3;
+    }
+    h1{
+        font-size: 67px;
+        color: $color-white;
+        font-weight: 300;
+        line-height: 1.15;
+    }
+    .subtile{
+        max-width: 700px;
+        h2{
+
+            line-height: 1.55;
+            color: rgba(255,255,255,.9);
+            font-weight: 300;
+            a{
+                color: rgba(255, 255, 255,1);
+                &:hover{
+                    color: rgba(255,255,255,.7);
+                }
+            }
+        }
+    }
+    .watch-intro{
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-white;
+        a{
+            color: $color-white;
+            i{
+                position: relative;
+                top: 2px;
+                transition: .3s all;
+            }
+            &:hover{
+                i{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
